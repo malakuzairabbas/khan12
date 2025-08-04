@@ -1,0 +1,831 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Poppins" Arial, sans-serif;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+}
+#headerfirst{
+    background-color: #82ae46;
+    display: flex; 
+    justify-content: space-around;
+    color: white;
+}
+@media screen and (max-width:768px) {
+    #headerfirst{
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+    }
+    
+}
+
+/* navbar editing is started from here  */
+#navbar1{
+    background-color: white;
+    padding: 5px 0;
+    box-shadow: none;
+}
+#navbarNav ul {
+    margin-left: 40%;
+}
+
+
+/* logo or brand editing  */
+    
+#brand-editing {
+            margin-left: 5%;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #28a745 !important; /* Green color for brand */
+            margin-right: 3rem;
+        }
+.navbar-nav {
+    gap: 2.5rem; /* This creates equal spacing between all nav items */
+}
+
+/* home etc editing  */
+ .nav-link {
+        font-size: 1.1rem;
+        /* font-weight: 500; */
+        color: #333 !important;
+        /* position: relative; */
+        padding: 0.5rem 0 !important;
+}
+
+        .dropdown-menu {
+            border: none;
+            /* box-shadow: 0 5px 15px rgba(0,0,0,0.1); */
+        }
+        
+        .dropdown-item {
+            padding: 0.5rem 1.5rem;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            /* color: #28a745 !important; */
+        }
+        
+        /* Mobile menu adjustments */
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                padding-top: 1rem;
+                text-align: center; /* Center align all nav items */
+            }
+            
+            .navbar-nav {
+                gap: 0.5rem;
+                align-items: center; /* Center items vertically */
+            }
+            
+            .nav-link {
+                padding: 0.5rem 1rem !important;
+                display: inline-block; /* Better for centering */
+            }
+            
+            /* Center the dropdown menu */
+            .dropdown-menu {
+                text-align: center;
+                position: static !important;
+                float: none;
+                margin: 0.5rem auto;
+                border: 1px solid rgba(0,0,0,0.1);
+                width: 80%; /* Set a reasonable width */
+            }
+            
+            /* Center the dropdown toggle arrow */
+            .dropdown-toggle::after {
+                margin-left: 0.5rem;
+                vertical-align: middle;
+            }
+            
+            /* Adjust brand positioning */
+            #brand-editing {
+                margin-right: 0;
+            }
+        }
+
+/* background pic  */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Caption text */
+.text, .text1, .container-button1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 3rem;
+  top: 40%;
+  font-family: "Amatic SC", cursive;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.text1 {
+  color: wheat;
+  font-size: 1.5rem;
+  top: 50%;
+  font-family: "Amatic SC", cursive;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.container-button1 {
+  top: 62%;
+}
+
+.hover-button-first {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.hover-button-first:hover {
+  background-color: transparent;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .1;} 
+  to {opacity: 1;}
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .text {
+    font-size: 2rem;
+    bottom: 55%;
+  }
+  .text1 {
+    font-size: 1.2rem;
+    bottom: 45%;
+  }
+  .container-button1 {
+    bottom: 35%;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+  .text1 {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .text {
+    font-size: 1.5rem;
+    bottom: 60%;
+    padding: 4px 8px;
+  }
+  .text1 {
+    font-size: 1rem;
+    bottom: 50%;
+    padding: 4px 8px;
+  }
+  .container-button1 {
+    bottom: 40%;
+  }
+  .hover-button-first {
+    padding: 8px 16px;
+    font-size: 14px;
+    min-width: 120px;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+  .text1 {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 1.2rem;
+  }
+  .text1 {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .text {
+    font-size: 2rem;
+    top: 35%;
+  }
+  .text1 {
+    font-size: 1.2rem;
+    top: 45%;
+  }
+  .container-button1 {
+    top: 58%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .text {
+    font-size: 1.5rem;
+    top: 15%;
+  }
+  .text1 {
+    font-size: 1rem;
+    top: 25%;
+  }
+  .container-button1 {
+    top: 35%;
+  }
+  .hover-button-first {
+    padding: 8px 16px;
+    font-size: 14px;
+    min-width: 120px;
+  }
+}
+/* 4 logo is editing is started from here  */
+.info-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 10px auto;
+        }
+        
+        .info-box {
+            /* background-color: white; */
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+            /* transition: transform 0.3s ease; */
+            transform: translate(scale(1.1));
+        }
+        
+        
+        
+        .info-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .info-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        /* 4 logo editing is started from here  */
+        .info-box .icon-1 {
+            line-height: 1.3;
+            position: relative;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            /* margin: 20px 0; */
+            margin-bottom: 20px;
+        }
+        .info-box .icon-1 i{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 2px solid rgba(155, 255, 255, 0.19);
+            border-radius: 50%;
+            font-size: 39px;
+            padding: 15px;
+            color: white;
+        }
+        #bag-logo1{
+            background-color: #e4b2d6;
+        }
+        #bag-logo2{
+            background-color: #dcc698;
+        }
+        #bag-logo3{
+            background-color: #a2d1e1;
+        }
+        #bag-logo4{
+            background-color: #dcd691;
+        }
+        #bag-logo1:hover,
+        #bag-logo2:hover,
+        #bag-logo3:hover,
+        #bag-logo4:hover{
+            background-color: #82ae46;
+        }
+        @media (max-width: 768px) {
+            .info-box {
+                min-width: 150px;
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .info-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .info-box {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        /* 3 boxes is :start from here  */
+
+        #containe-veget {
+          display: flex;
+          justify-content: center;
+          gap: 1%;
+          flex-wrap: wrap;
+        }
+
+        #containe-veget .vege1,
+        #containe-veget .vege2,
+        #containe-veget .vege3,
+        #containe-veget2 .vege4,
+        #containe-veget2 .vege5,
+        #containe-veget2 .vege6 {
+          width: 350px;
+          height: 300px;
+          background-position: center;
+          background-size: cover;
+          margin-bottom: 15px;
+        }
+
+        #containe-veget .vege1 {
+          background-image: url(https://preview.colorlib.com/theme/vegefoods/images/category-1.jpg.webp);
+        }
+
+        
+
+        #containe-veget .vege2 h2 {
+          font-size: 24px;
+          color: #82ae82;
+          font-family: "Lora", Georgia, serif;
+          font-style: italic;
+          text-align: center;
+        }
+
+        /* container 2 paragraph editig is started from here  */
+        #containe-veget .vege2 p {
+          color: #808080;
+          font-family: "Poppine" Arial, sans-serif;
+          margin: 15px 0;
+          text-align: center;
+        }
+
+        /* button editing is started from here  */
+        .container2-button1 {
+          text-align: center;
+        }
+
+        .hover-button-first2 {
+          display: inline-block;
+          padding: 12px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 20px;
+          font-size: 16px;
+          font-weight: bold;
+          /* text-align: center; */
+          margin-left: 25%;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          min-width: 150px;
+        }
+
+        .hover-button-first2:hover {
+          background-color: transparent;
+          color: #4CAF50;
+          border: 1px solid #4CAF50;
+        }
+
+        #containe-veget .vege3 {
+          background-image: url(https://preview.colorlib.com/theme/vegefoods/images/category-3.jpg);
+        }
+
+        /* last 3 boxes is started from here  */
+        #containe-veget2 {
+          display: flex;
+          justify-content: center;
+          gap: 1%;
+          flex-wrap: wrap;
+        }
+
+        #containe-veget2 .vege4 {
+          background-image: url(https://preview.colorlib.com/theme/vegefoods/images/category-2.jpg);
+        }
+
+        #containe-veget2 .vege5 {
+          background-image: url(https://preview.colorlib.com/theme/vegefoods/images/category.jpg);
+        }
+
+        #containe-veget2 .vege6 {
+          background-image: url(https://preview.colorlib.com/theme/vegefoods/images/category-4.jpg);
+        }
+
+        .absolute-head {
+          margin-top: 72%;
+        }
+
+        .absolute-head h2 {
+          padding: 6px;
+          width: 150px;
+          background-color: #4CAF50;
+        }
+
+        .absolute-head h2 a {
+          font-weight: 100;
+          text-decoration: none;
+          color: white;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1100px) {
+          #containe-veget,
+          #containe-veget2 {
+            gap: 15px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          #containe-veget .vege1,
+          #containe-veget .vege2,
+          #containe-veget .vege3,
+          #containe-veget2 .vege4,
+          #containe-veget2 .vege5,
+          #containe-veget2 .vege6 {
+            width: 300px;
+            height: 250px;
+          }
+
+          .absolute-head {
+            margin-top: 65%;
+          }
+        }
+
+        @media (max-width: 480px) {
+          #containe-veget .vege1,
+          #containe-veget .vege2,
+          #containe-veget .vege3,
+          #containe-veget2 .vege4,
+          #containe-veget2 .vege5,
+          #containe-veget2 .vege6 {
+            width: 100%;
+            max-width: 350px;
+          }
+
+          .absolute-head {
+            margin-top: 60%;
+          }
+        }
+        /* food card is started from here  */
+        /* page 4 is started from here  */
+
+    .product-card {
+      border: 1px solid #eee;
+      padding: 15px;
+      position: relative;
+      text-align: center;
+      transition: transform 0.3s;
+      overflow: hidden;
+    }
+
+    
+
+    .discount-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #82ae46;
+      color: black;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: bold;
+      z-index: 2;
+    }
+
+    .product-image {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .product-name {
+      font-weight: 600;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .pay-hover-text {
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      /* background-color: #82ae46; */
+      background-color: white;
+      color: black;
+      padding: 10px 0;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      z-index: 2;
+    }
+
+
+    .product-card:hover .pay-hover-text {
+      bottom: 0;
+    }
+
+    .product-image:hover { 
+      transform: scale(1.1);
+
+    }
+    .pay-hover-text i{
+      background-color: #82ae46;
+      color: white;
+      border-radius: 50%;
+      padding: 6px;
+    }
+
+    
+ /* <!-- background image page is started from here  --> */
+ #page-bg{
+
+   width: 100%;
+   height: 100vh;
+ }
+ .bg-img-p-box {
+  background-image: url(https://preview.colorlib.com/theme/vegefoods/images/bg_3.jpg);
+  width: 100%;
+  height: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* margin-bottom: 20px; */
+ }
+ .bg-img-p-box{
+  /* text-align: end; */
+  /* margin-left: 50%; */
+  padding-top: 5%;
+  padding-left: 50%;
+ }
+ .bg-img-p-box span{
+  color: #82ae46;
+  font-size: 18px;
+  font-family: "Lora", Georgia, serif;
+  font-style: italic;
+  margin-bottom: 10px;
+ }
+ .bg-img-p-box h2{
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Poppins", Arial, sans-serif;
+ }
+ .bg-img-p-box p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+ }
+ .bg-img-p-box a{
+  font-size: 30px;
+  font-family: "Lora", Georgia, serif;
+  font-style: italic;
+  text-decoration: none;
+  color: #82ae82;
+  transition: .3s all ease;
+ }
+.bg-img-p-box .price-10{
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0,0,0,0.5);
+
+}
+
+.bg-img-p-box .price-10 a{
+  font-family: "Poppins", Arial, sans-serif;
+  /* color: red; */
+}
+
+
+/* page 6 is started from here  */
+
+/* title of the page is starrted from here  */
+.container-fluid span{
+  font-size: 18px;
+  color: #82ae46;
+  font-style: italic;
+  font-family: "Lora", Georgia, serif;
+  
+}
+.container-fluid .headingh22{
+  color: #000000;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Poppins", Arial, sans-serif;
+
+} 
+.container-fluid .paragrahp{
+  color: #808080;
+  font-size: 15px;
+  
+  font-family: "Poppins", Arial, sans-serif;
+}
+/* imge slider in swiper is started form here  */
+.swiper {
+            margin-top: 5%;
+            width: 100%;
+            height: 70%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 !important; /* Remove padding between slides */
+        }
+
+        .animationlogo {
+            width: 350px;
+            text-align: center;
+            margin: 0 auto; /* Center cards on mobile */
+        }
+
+        .testimoney1-interface .userimge {
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://preview.colorlib.com/theme/vegefoods/images/person_1.jpg);
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .textp .para-text {
+            width: 300px;
+            margin: 0 auto;
+            color: #808080;
+            font-family: "Poppins", Arial, sans-serif;
+        }
+
+        .testimoney1-interface .textp .name {
+            margin-bottom: 0;
+            font-size: 18px;
+            font-weight: 400;
+            color: #000000;
+        }
+
+        .testimoney1-interface .textp .position1 {
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #82ae46;
+        }
+
+        .textp .line {
+            border-right: 1px solid #82ae46;
+        }
+
+        .int-des {
+            background-image: url(https://preview.colorlib.com/theme/vegefoods/images/person_2.jpg) !important;
+        }
+
+        .Ui-desbg {
+            background-image: url(https://preview.colorlib.com/theme/vegefoods/images/person_3.jpg) !important;
+        }
+
+        
+        
+
+        /* Mobile fixes */
+        @media (max-width: 768px) {
+            .animationlogo {
+                width: 100%;
+                max-width: 350px;
+                padding: 0 15px;
+            }
+            
+            .textp .para-text {
+                width: 100%;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            
+            .textp .line {
+                border-right: none;
+            }
+            
+            .swiper-slide {
+                justify-content: center !important;
+            }
+        }
+
+
+/* ///////////////////////////////////////////////////////////// */
+.logo-img-icon{
+  width: 150px;
+  height: 60px;
+}
+/* second section editing is stated form here / */
+.mysearch {
+  border-radius: 0%;
+  width: 100%;
+  height: 50px;
+}
+
+.mybtn {
+  padding: 0 30px;
+  background-color: #83ae46;
+  height: 50px;
+  /* margin-top: 10px; */
+  border: none;
+  width: 100%;
+}
+
+.fullcont {
+  background-color: #f7f6f2;
+  padding: 50px 60px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* last page of the website is  */
+.container ul li a{
+  text-decoration: none;
+  color: #000;
+
+}
+.icons-box{
+  display: flex;
+  gap: 13%;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  /* background-color: red; */
+}
+ul li .icon{
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 50%;
+  padding: 5px;
+}
+.last-page{
+  color: #000;
+}
+/* responsive is start form here  */
+
+@media screen and (max-width: 450px) {
+    .ppph1 {
+        text-align: center;
+    }
+    #icons-box{
+        margin-left: 30%;
+    }
+}

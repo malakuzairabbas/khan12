@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Poppins" Arial, sans-serif;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+#headerfirst{
+    background-color: #82ae46;
+    display: flex; 
+    justify-content: space-around;
+    color: white;
+}
+@media screen and (max-width:768px) {
+    #headerfirst{
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+    }
+    
+}
+
+/* navbar editing is started from here  */
+
+#navbar1{
+    background-color: white;
+    padding: 5px 0;
+    box-shadow: none;
+}
+#navbarNav ul {
+    margin-left: 40%;
+}
+
+
+/* logo or brand editing  */
+    
+#brand-editing {
+            margin-left: 5%;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #28a745 !important; /* Green color for brand */
+            margin-right: 3rem;
+        }
+.navbar-nav {
+    gap: 2.5rem; /* This creates equal spacing between all nav items */
+}
+
+/* home etc editing  */
+ .nav-link {
+        font-size: 1.1rem;
+        /* font-weight: 500; */
+        color: #333 !important;
+        /* position: relative; */
+        padding: 0.5rem 0 !important;
+}
+
+        .dropdown-menu {
+            border: none;
+            /* box-shadow: 0 5px 15px rgba(0,0,0,0.1); */
+        }
+        
+        .dropdown-item {
+            padding: 0.5rem 1.5rem;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            /* color: #28a745 !important; */
+        }
+        
+        /* Mobile menu adjustments */
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                padding-top: 1rem;
+                text-align: center; /* Center align all nav items */
+            }
+            
+            .navbar-nav {
+                gap: 0.5rem;
+                align-items: center; /* Center items vertically */
+            }
+            
+            .nav-link {
+                padding: 0.5rem 1rem !important;
+                display: inline-block; /* Better for centering */
+            }
+            
+            /* Center the dropdown menu */
+            .dropdown-menu {
+                text-align: center;
+                position: static !important;
+                float: none;
+                margin: 0.5rem auto;
+                border: 1px solid rgba(0,0,0,0.1);
+                width: 80%; /* Set a reasonable width */
+            }
+            
+            /* Center the dropdown toggle arrow */
+            .dropdown-toggle::after {
+                margin-left: 0.5rem;
+                vertical-align: middle;
+            }
+            
+            /* Adjust brand positioning */
+            #brand-editing {
+                margin-right: 0;
+            }
+        }
+/* background image is started from here  */
+
+    .bg-section {
+      background-image: url(https://preview.colorlib.com/theme/vegefoods/images/bg_1.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 50vh; /* Make it full viewport height */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    }
+
+
+/* button editing is started from here   */
+.bbtn {
+    background-color: #82ae46;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bbtn:hover {
+    /* background-color: #6f9b3d; */
+    color: #6f9b3d;
+    border: 1px solid #82ae46;
+}
+
+/* second section editing is stated form here / */
+.mysearch {
+  border-radius: 0%;
+  width: 90%;
+  height: 50px;
+}
+
+.mybtn {
+  padding: 0 30px;
+  background-color: #83ae46;
+  height: 50px;
+  /* margin-top: 10px; */
+  border: none;
+  width: 80%;
+}
+
+.fullcont {
+  background-color: #f7f6f2;
+  padding: 50px 60px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* last page of the website is  */
+.container ul li a{
+  text-decoration: none;
+  color: #000;
+
+}
+.icons-box{
+  display: flex;
+  gap: 13%;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  /* background-color: red; */
+}
+ul li .icon{
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 50%;
+  padding: 5px;
+}
+.last-page{
+  color: #000;
+}
+/* responsive is start form here  */
+
+@media screen and (max-width: 450px) {
+    .ppph1 {
+        text-align: center;
+    }
+    #icons-box{
+        margin-left: 30%;
+    }
+}

@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Poppins" Arial, sans-serif;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+#headerfirst{
+    background-color: #82ae46;
+    display: flex; 
+    justify-content: space-around;
+    color: white;
+}
+@media screen and (max-width:768px) {
+    #headerfirst{
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+    }
+    
+}
+
+/* navbar editing is started from here  */
+#navbar1{
+    background-color: white;
+    padding: 5px 0;
+    box-shadow: none;
+}
+#navbarNav ul {
+    margin-left: 40%;
+}
+
+
+/* logo or brand editing  */
+    
+#brand-editing {
+            margin-left: 5%;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #28a745 !important; /* Green color for brand */
+            margin-right: 3rem;
+        }
+.navbar-nav {
+    gap: 2.5rem; /* This creates equal spacing between all nav items */
+}
+
+/* home etc editing  */
+ .nav-link {
+        font-size: 1.1rem;
+        /* font-weight: 500; */
+        color: #333 !important;
+        /* position: relative; */
+        padding: 0.5rem 0 !important;
+}
+
+        .dropdown-menu {
+            border: none;
+            /* box-shadow: 0 5px 15px rgba(0,0,0,0.1); */
+        }
+        
+        .dropdown-item {
+            padding: 0.5rem 1.5rem;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            /* color: #28a745 !important; */
+        }
+        
+        /* Mobile menu adjustments */
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                padding-top: 1rem;
+                text-align: center; /* Center align all nav items */
+            }
+            
+            .navbar-nav {
+                gap: 0.5rem;
+                align-items: center; /* Center items vertically */
+            }
+            
+            .nav-link {
+                padding: 0.5rem 1rem !important;
+                display: inline-block; /* Better for centering */
+            }
+            
+            /* Center the dropdown menu */
+            .dropdown-menu {
+                text-align: center;
+                position: static !important;
+                float: none;
+                margin: 0.5rem auto;
+                border: 1px solid rgba(0,0,0,0.1);
+                width: 80%; /* Set a reasonable width */
+            }
+            
+            /* Center the dropdown toggle arrow */
+            .dropdown-toggle::after {
+                margin-left: 0.5rem;
+                vertical-align: middle;
+            }
+            
+            /* Adjust brand positioning */
+            #brand-editing {
+                margin-right: 0;
+            }
+        }
+/* background image is started from here  */
+
+    .bg-section {
+      background-image: url(https://preview.colorlib.com/theme/vegefoods/images/bg_1.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 50vh; /* Make it full viewport height */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    }
+
+
+    /* images  */
+.custom-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card-body {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.card {
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* button editing is started from here  */
+.container-button1{
+    margin-top: 10px;
+}
+.hover-button-first {
+  display: inline-block;
+  padding: 8px 13px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.hover-button-first:hover {
+  background-color: transparent;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+}
+
+/* side bar  search bar */.minimal-search-box {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 30px auto;
+  background-color: white;
+}
+
+.search-input {
+  border: none;
+  flex: 1;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+}
+
+.search-icon {
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* categories is started from here */
+.categories {
+    margin-top: 100px;
+}
+
+.categories h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.categories .list-group-item {
+    border: none;
+    padding: 10px 15px;
+    /* background-color: #f8f9fa; */
+    transition: background-color 0.3s;
+}
+
+.categories .list-group-item:hover {
+    background-color: #e9ecef;
+}
+.list-group .list-group-item a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Tag cloud is started from here  */
+.tag-cloud {
+    margin-top: 50px;
+}
+.tags-cloud a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    padding: 4px 10px;
+    margin-bottom: 6px;
+    font-size: 11px;
+    display: inline-block;
+
+}
+.tags-cloud a:hover {
+    transition: background-color 0.3s, color 0.3s;
+    border-color: black;
+}
+/* last page is started from here  */
+#pagelast{
+    background-color: #f7f6f2;
+    padding: 20px;
+}
+.container ul li a{
+  text-decoration: none;
+  color: #000;
+
+}
+.icons-box{
+  display: flex;
+  gap: 13%;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  /* background-color: red; */
+}
+ul li .icon{
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 50%;
+  padding: 5px;
+}
+.last-page{
+  color: #000;
+}
+
+/* responsive is start form here  */
+
+@media screen and (max-width: 450px) {
+    .ppph1 {
+        text-align: center;
+    }
+    #icons-box{
+        margin-left: 30%;
+    }
+}
